@@ -19,3 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('Categoria','App\Http\Controllers\CategoriaController@getCategoria');
+
+Route::get('Categoria/{id}','App\Http\Controllers\CategoriaController@getCategoriaId');
+
+Route::post('addCategoria', 'App\Http\Controllers\CategoriaController@insertCategoria');
